@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body, html{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/057/216/198/non_2x/abstract-orange-background-with-waves-and-sun-illustration-for-your-design-vector.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+header h1{
+  font-size: 38px;
+  font-weight: 200;
+  font-style: italic;
+  width: 400px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+header span{
+  color: #FF7C36;
+  font-weight: 300;
+}
+
+header button{
+  background-color: #FF7C36;
+  border: 0;
+  color: #fff;
+  padding: 5px 30px;
+  margin: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  place-items: center;
+  background-color: #F6C197;
+  gap: 70px;
+  height: 60px;
+  margin-bottom: 60px;
+  z-index: 1;
+}
+
+nav a{
+  color: #000;
+}
+
+nav img{
+  height: 150px;
+  position: absolute;
+  width: auto;
+  background-color: #F6C197;
+  border-radius: 100px;
+}
+
+nav span{
+  margin: 0 50px;
+}
+
+header div{
+  position: absolute;
+}
+
+.artworkContainer{
+  top: 70px;
+  left: 10px;
+  z-index: 0;
+}
+.artworkContainer img{
+  height: auto;
+  border: 2px solid #F9A26C;
+  position: absolute;
+}
+
+.artwork1{
+  width: 230px;
+}
+
+.artowrk2{
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  left:150px;
+  margin-top: 70px;
+  width: 200px;
+}
+
+.artworkContainer2{
+  right: 10px;
+}
+
+.artwork3{
+  border: 2px solid #F9A26C;
+  width: 250px;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+.nav2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  place-items: center;
+  padding: 70px 0;
+  gap: 100px;
+  background-color: #fde8d8ea;
+}
+
+.nav2 div{
+  width: 300px;
+  height: 150px;
+  border-radius: 100px 0 0 0;
+  background-color: #FFE2BD;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav2 .second{
+  background-color: #F9A26C;
+  border-radius: 0 0 100px 0;
+}
+
+.span2{
+  font-size: 24px;
+}
+
+.servicesArtwork{
+  display: flex;
+  height: 350px;
+  background-image: url(https://primowedding.com/wp-content/uploads/2023/12/banner_4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px;
+  filter: opacity(0.95) grayscale(0.3);
+  justify-content: center;
+  place-items: center;
+}
+
+.servicesArtwork div{
+  width: 550px;
+  height: 300px;
+  background-color: #faeedcf3;
+  padding: 0 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+}
+
+.servicesArtwork span{
+  font-style: italic;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.servicesArtwork button{
+  background-color: #FF7C36;
+  border: 0;
+  color: #fff;
+  padding: 5px 30px;
+  margin: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.experience{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 0 50px;
+  position: relative;
+  gap: 50px;
+}
+.experience img{
+  width: 250px;
+}
+
+.experience .exp2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.exp2Text{
+  display: flex;
+}
+
+.experience .img2{
+  width: 200px;
+  top: 50px;
+  right: 0;
+}
+
+.expImgContainer{
+  position: relative;
+  width: 500px;
+}
+.expImgContainer img{
+  position: absolute;
+}
