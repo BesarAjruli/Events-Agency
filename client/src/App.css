@@ -187,7 +187,6 @@ header div{
 .experience{
   display: flex;
   justify-content: center;
-  place-items: center;
   padding: 0 50px;
   position: relative;
   gap: 50px;
@@ -199,12 +198,25 @@ header div{
 .experience .exp2{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  place-items: center;
+  width: 300px;
 }
 
 .exp2Text{
   display: flex;
+  gap: 70px;
+  width: 200px;
+}
+
+.exp2Text div{
+  display: flex;
+  flex-direction: column;
+}
+
+.expNr{
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FF7C36;
 }
 
 .experience .img2{
@@ -219,4 +231,98 @@ header div{
 }
 .expImgContainer img{
   position: absolute;
+}
+
+.exp2 .mainSpan{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.portfolio{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 50px;
+  margin-top: 400px;
+  position: relative;
+}
+
+.portfolio .main{
+  height: 350px;
+}
+
+.portImgCont{
+  height: 300px;
+  width: 200px;
+}
+
+.portImgCont img{
+  height: 100%;
+width: auto;
+}
+
+.portfolio span{
+  position: absolute;
+  top: -130px;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+footer{
+  background-color: #FFE2BD;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+footer img{
+  width: 200px;
+}
+
+.footerNav a{
+  color: #000;
+  margin: 0 30px;
+}
+
+.divContainer{
+  margin-top: 70px;
+  display: flex;
+  gap: 70px;
+}
+
+.divContainer>div{
+  background-color: #F9A26C;
+  padding: 50px 30px;
+  width: 500px;
+}
+
+.divContainer>div span{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.divContainer>div ul{
+  list-style: none;
+  margin-top: 30px;
+  display: grid;
+  row-gap: 30px;
+  padding: 0;
+}
+
+.contactInfo{
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.divContainer>div>ul li{
+  display: flex;
+  place-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.workingHours>ul{
+  grid-template-columns: 1fr;
 }
