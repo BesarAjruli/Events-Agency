@@ -1,15 +1,28 @@
 import './App.css'
 import './AppMobile.css'
 import Icon from '@mdi/react';
-import { mdiEmail, mdiPhone, mdiClock, mdiMapMarker, mdiClose } from '@mdi/js';
+import { mdiEmail, mdiPhone, mdiClock, mdiMapMarker, mdiClose, mdiMenu } from '@mdi/js';
+import { useRef } from 'react';
 
 function App() {
+
+  const navRef = useRef()
+
+   const hideSideMenu = () => {
+    navRef.current.style.display = 'none'
+  }
+  
+  const showSideMenu = () => {
+    navRef.current.style.display = 'flex'
+  }
+
   return(
     <>
       <header>
           <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/aquila-web-hosting.appspot.com/o/Logos%20Others%2FBrown_Enchanted_Events_Logo-removebg-preview.png?alt=media&token=a6638157-c587-42a3-8ba3-024a604cf839" alt="logo"/>
-        <nav>
-          <Icon path={mdiClose} size={1} className='closeIcon'></Icon>
+          <Icon path={mdiMenu} size={1.4} className='menu' onClick={showSideMenu}></Icon>
+        <nav ref={navRef}>
+          <Icon path={mdiClose} size={1} className='closeIcon' onClick={hideSideMenu}></Icon>
           <a href="">Home</a>
           <a href="">Book a meeting</a>
           <span></span>
@@ -72,6 +85,7 @@ function App() {
 
 
       <div className='portfolioCont'> 
+        <span>Some of our work</span>
         <div className='portfolio'>
         <span>Some of our work</span>
           <div className="portImgCont">

@@ -334,3 +334,11 @@ footer img{
 .closeIcon{
   display: none;
 }
+
+.menu{
+  display: none;
+}
+
+.portfolioCont>span{
+  display: none;
+}
