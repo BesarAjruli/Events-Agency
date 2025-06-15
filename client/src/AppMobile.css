@@ -1,0 +1,138 @@
+@media only screen and (max-width: 600px){
+nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FFE2BD;
+    height: 100vh;
+    gap: 30px;
+}
+nav img{
+    position: absolute;
+    background-color: transparent;
+    top: 30px;
+    width: 150px;
+    height: auto;
+}
+
+nav span{
+    display: none;
+}
+
+.closeIcon{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.logo{
+    display: block;
+    width: 150px;
+    z-index: 1;
+}
+
+header h1, header span, header button{
+    z-index: 1;
+}
+header h1{
+    font-weight: 300;
+}
+.artwork1{
+    width: 130px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.artowrk2{
+    width: 130px;
+    left: 90px;
+    opacity: 0.7;
+}
+
+.artwork3{
+  width: 130px;
+  opacity: 0.8;
+}
+
+.nav2{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.servicesArtwork div{
+    width: 320px;
+    height: 280px;
+    padding: 10px;
+}
+.servicesArtwork span{
+font-size: 30px;
+}
+.servicesArtwork button{
+    padding: 10px;
+}
+
+.experience{
+    padding: 0 30px;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+}
+
+.expImgContainer{
+    width: 100%;
+    margin-bottom: 270px;
+}
+
+.experience .img2{
+  width: 150px;
+  top: 30px;
+  right: 10px;
+}
+
+.exp2Text{
+    width: 100%;
+    padding: 0 10px;
+    gap: 30px;
+}
+
+.experience .expImg{
+    width: 160px;
+    left: 0;
+}
+
+.portfolio{
+    margin-top: 200px;
+    overflow: hidden;
+    width: fit-content;
+}
+.portImgCont{
+    overflow: hidden;
+    width: 200px;
+}
+
+.portfolioCont{
+    width: 100%;
+    overflow: hidden;
+}
+
+.divContainer{
+    flex-direction: column;
+}
+
+.divContainer div{
+    width: 250px;
+}
+
+.contactInfo{
+        grid-template-columns: 1fr;
+}
+
+.footerNav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+} 

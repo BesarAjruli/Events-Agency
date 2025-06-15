@@ -326,3 +326,11 @@ footer img{
 .workingHours>ul{
   grid-template-columns: 1fr;
 }
+
+.logo{
+  display: none;
+}
+
+.closeIcon{
+  display: none;
+}

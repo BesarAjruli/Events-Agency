@@ -1,12 +1,15 @@
 import './App.css'
+import './AppMobile.css'
 import Icon from '@mdi/react';
-import { mdiEmail, mdiPhone, mdiClock, mdiMapMarker } from '@mdi/js';
+import { mdiEmail, mdiPhone, mdiClock, mdiMapMarker, mdiClose } from '@mdi/js';
 
 function App() {
   return(
     <>
       <header>
+          <img className='logo' src="https://firebasestorage.googleapis.com/v0/b/aquila-web-hosting.appspot.com/o/Logos%20Others%2FBrown_Enchanted_Events_Logo-removebg-preview.png?alt=media&token=a6638157-c587-42a3-8ba3-024a604cf839" alt="logo"/>
         <nav>
+          <Icon path={mdiClose} size={1} className='closeIcon'></Icon>
           <a href="">Home</a>
           <a href="">Book a meeting</a>
           <span></span>
@@ -48,7 +51,7 @@ function App() {
 
       <div className='experience'>
         <div className='expImgContainer'>
-          <img src="https://www.eastevents.in/wp-content/uploads/2023/10/IMG_2609.jpg" alt="indoor decor" />
+          <img className='expImg' src="https://www.eastevents.in/wp-content/uploads/2023/10/IMG_2609.jpg" alt="indoor decor" />
           <img className='img2' src="https://www.weddingforward.com/wp-content/uploads/2021/10/wedding-altar-decoration-main-phuket_wedding_planner.jpg" alt="ourdoor decor" />
         </div>
 
@@ -68,14 +71,16 @@ function App() {
       </div>
 
 
-      <div className='portfolio'>
-      <span>Some of our work</span>
-        <div className="portImgCont">
-        <img src="https://alexandriamonette.com/wp-content/uploads/2022/11/Mixed-Modern-Wedding-Decorations-For-Your-Reception-03.jpg" alt="port1" /></div>
-        <div className="portImgCont"><img src="https://ellebeedesign.co.uk/cdn/shop/articles/RECTORY-01351.jpg?v=1723828840&width=1067" alt="portfolio image 2" /></div>
-        <div className="portImgCont main"><img src="https://wp-media-partyslate.imgix.net/2021/01/photo-95f006aa-8411-4fb9-8c0f-1ed68fe3cadd.jpg?auto=compress%2Cformat&ixlib=php-3.3.1" alt="" /></div>
-        <div className="portImgCont"><img src="https://images.squarespace-cdn.com/content/v1/5f6c63274865985e13575ba8/12b70f4c-7fba-4a12-bc9a-19f24f97ffeb/redhouse-barn-wedding-decor.jpeg" alt="" /></div>
-        <div className="portImgCont"><img src="https://www.tulleandchantilly.com/blog/wp-content/uploads/2020/09/Table-setting-decors-backyard-wedding-decorsmicrowedding-decor-via-Brit-Morin.jpg" alt="" /></div>
+      <div className='portfolioCont'> 
+        <div className='portfolio'>
+        <span>Some of our work</span>
+          <div className="portImgCont">
+          <img src="https://alexandriamonette.com/wp-content/uploads/2022/11/Mixed-Modern-Wedding-Decorations-For-Your-Reception-03.jpg" alt="port1" /></div>
+          <div className="portImgCont"><img src="https://ellebeedesign.co.uk/cdn/shop/articles/RECTORY-01351.jpg?v=1723828840&width=1067" alt="portfolio image 2" /></div>
+          <div className="portImgCont main"><img src="https://wp-media-partyslate.imgix.net/2021/01/photo-95f006aa-8411-4fb9-8c0f-1ed68fe3cadd.jpg?auto=compress%2Cformat&ixlib=php-3.3.1" alt="" /></div>
+          <div className="portImgCont"><img src="https://images.squarespace-cdn.com/content/v1/5f6c63274865985e13575ba8/12b70f4c-7fba-4a12-bc9a-19f24f97ffeb/redhouse-barn-wedding-decor.jpeg" alt="" /></div>
+          <div className="portImgCont"><img src="https://www.tulleandchantilly.com/blog/wp-content/uploads/2020/09/Table-setting-decors-backyard-wedding-decorsmicrowedding-decor-via-Brit-Morin.jpg" alt="" /></div>
+        </div>
       </div>
 
       <footer>
